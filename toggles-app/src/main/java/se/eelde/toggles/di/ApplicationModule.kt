@@ -30,4 +30,5 @@ object ApplicationModule {
     @Provides
     fun providesWrenchPreferences(@ApplicationContext context: Context): TogglesPreferences =
         TogglesPreferencesImpl(context)
+
 }

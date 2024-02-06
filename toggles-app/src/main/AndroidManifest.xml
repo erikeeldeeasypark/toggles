@@ -21,8 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        tools:targetApi="31">
+        tools:targetApi="s">
 
         <activity
             android:name=".MainActivity"
@@ -40,6 +39,17 @@
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedContentProvider" />
-    </application>
 
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <!-- This entry makes ExampleLoggerInitializer discoverable. -->
+            <meta-data
+                android:name="se.eelde.toggles.WorkManagerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+    </application>
 </manifest>

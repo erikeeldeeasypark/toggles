@@ -22,6 +22,7 @@ espresso-core = "3.5.1"
 junit = "4.13.2"
 kotlin = "1.9.22"
 org-jetbrains-kotlinx = "1.6.4"
+ui-test-junit4-android = "1.5.4"
 
 [libraries]
 androidx-activity = { module = "androidx.activity:activity", version.ref = "androidx-activity" }
@@ -94,6 +95,7 @@ androidx-test-ext-truth = "androidx.test.ext:truth:1.5.0"
 androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidx-test" }
 androidx-test-runner = "androidx.test:runner:1.5.2"
 androidx-tracing = "androidx.tracing:tracing:1.0.0"
+androidx-compose-ui-ui-test-junit4-android = { module = "androidx.compose.ui:ui-test-junit4-android", version.ref = "ui-test-junit4-android" }
 androidx-vectordrawable = { module = "androidx.vectordrawable:vectordrawable", version.ref = "androidx-vectordrawable" }
 androidx-vectordrawable-vectordrawable-animated = { module = "androidx.vectordrawable:vectordrawable-animated", version.ref = "androidx-vectordrawable" }
 androidx-versionedparcelable = "androidx.versionedparcelable:versionedparcelable:1.1.1"

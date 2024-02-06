@@ -25,12 +25,14 @@ import se.eelde.toggles.applications.applicationNavigations
 import se.eelde.toggles.booleanconfiguration.BooleanValueView
 import se.eelde.toggles.composetheme.TogglesTheme
 import se.eelde.toggles.configurations.configurationsNavigations
+import se.eelde.toggles.di.SingleInstanceClass
 import se.eelde.toggles.dialogs.scope.ScopeValueView
 import se.eelde.toggles.enumconfiguration.EnumValueView
 import se.eelde.toggles.help.HelpView
 import se.eelde.toggles.integerconfiguration.IntegerValueView
 import se.eelde.toggles.oss.OssView
 import se.eelde.toggles.stringconfiguration.StringValueView
+import javax.inject.Inject
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Suppress("LongMethod")
@@ -143,6 +145,9 @@ fun Navigation(
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @Inject
+    lateinit var singleSingleInstanceClass: SingleInstanceClass
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
